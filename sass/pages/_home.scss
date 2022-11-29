@@ -1,0 +1,211 @@
+// SKILLS SECTION //
+.skills {
+  grid-row: skills-start / skills-end;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, min-content);
+  gap: 2rem 1vw;
+  padding: 4.8rem;
+  background-color: $grey-2;
+
+  @media only screen and (max-width: $bp-laptop) {
+    grid-template-columns: min-content;
+    grid-template-rows: min-content repeat(4, 1fr);
+    justify-content: center;
+    gap: 2rem 0;
+  }
+
+  @media only screen and (max-width: $bp-tablet) {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    padding: 3.2rem;
+  }
+
+  @media only screen and (max-width: $bp-mobile-l){
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+  }
+
+  &__header {
+    @include home-header-formatting;
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+}
+
+// PROJECT SECTION //
+.projects {
+  grid-row: project-start / project-end;
+  display: grid;
+  gap: 3rem 0;
+  padding: 4.8rem;
+  justify-items: center;
+  background-color: $grey-1;
+
+  @media only screen and (max-width: $bp-4K) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem 5rem;
+  }
+
+  @media only screen and (max-width: $bp-laptop-l) {
+    grid-template-columns: 1fr;
+  }
+
+  @media only screen and (max-width: $bp-tablet) {
+    padding: 3.2rem;
+  }
+
+  @media only screen and (max-width: $bp-mobile-l){
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+  }
+
+  &__header {
+    @include home-header-formatting;
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+  }
+
+  &__extras {
+    @include hide-content;
+  }
+}
+
+// BIO SECTION //  
+.bio {
+  grid-row: bio-start / bio-end;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(5, min-content);
+  gap: 2rem 0;
+  justify-items: center;
+  padding: 4.8rem;
+  background-color: $white-2;
+
+  @media only screen and (max-width: $bp-tablet) {
+    padding: 3.2rem;
+  }
+
+  @media only screen and (max-width: $bp-mobile-l){
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+  }
+
+  &__header {
+    grid-column: 1 / -1;
+    @include home-header-formatting;
+  }
+
+  &__img {
+    grid-column: 1 / 2;
+    max-height: 25rem;
+    max-width: 25rem;
+    border-radius: 50%;
+    transform: translateX(3rem);
+
+    @media only screen and (max-width: $bp-laptop) {
+      grid-column: 2 / 6;
+      transform: translateX(0);
+    }
+  }
+
+  &__content {
+    grid-column: 2 / 6;
+    background-color: $grey-1;
+    padding: 5rem;
+
+    @media only screen and (max-width: $bp-laptop) {
+      grid-column: 1 / -1;
+    }
+
+    &__paragraph:not(:last-child) {
+      margin-bottom: 1.6rem;
+    }
+  }
+}
+
+// CURRICULUM LIST DROPDOWN //
+.curriculum {
+  @include hide-content;
+  grid-column: 1 / -1;
+  grid-row: 5 / 6;
+  padding: 3.2rem;
+  background-color: $white;
+
+  @media only screen and (max-width: $bp-tablet){
+    padding: 1.6rem;
+  }
+
+  @media only screen and (max-width: $bp-mobile-l){
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+  }
+
+  &__methodology {
+    background-color: $navy-2;
+    color: $grey-1;
+    padding: 1.6rem;
+    border-radius: 5px;
+  }
+}
+
+// CONTACT SECTION //
+.contact {
+  grid-row: contact-start / contact-end;
+  display: grid;
+  grid-template-columns: 1fr repeat(3, max-content) 1fr;
+  grid-template-rows: repeat(2, max-content);
+  gap: 1.6rem 1.6rem;
+  justify-items: center;
+  padding-top: 4.8rem;
+  padding-bottom: 4.8rem;
+  background-color: $grey-2;
+
+  @media only screen and (max-width: $bp-tablet) {
+    grid-template-rows: repeat(3, max-content);
+    gap: 1.6rem 0;
+    padding-top: 3.2rem;
+    padding-bottom: 3.2rem;
+  }
+
+  @media only screen and (max-width: $bp-mobile-l){
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+  }
+
+  &__header {
+    grid-column: 1 / -1;
+    @include home-header-formatting;
+  }
+}
+
+.online-profile {
+  grid-column: 2 / 3;
+  @include contact-formatting;
+
+  @media only screen and (max-width: $bp-tablet) {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+  }
+}
+
+.email {
+  grid-column: 3 / 4;
+  @include contact-formatting;
+
+  @media only screen and (max-width: $bp-tablet) {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+  }
+}
+
+.social-media {
+  grid-column: 4 / 5;
+  @include contact-formatting;
+
+  @media only screen and (max-width: $bp-tablet) {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+  }
+}
