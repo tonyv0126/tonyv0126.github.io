@@ -275,6 +275,52 @@
     <!-- PROJECTS SECTION -->
     <section class="projects" id="projects">
       <h3 class="projects__header" id="target">Projects</h3>
+
+
+           <!-- PROJECT: Finance -->
+           <div class="card">
+            <h4 class="card__heading">WelBuild</h4>
+            <h5 class="card__sub-heading">Full-stack web application for managing an investment portfolio by buying and selling stocks based on their actual prices</h5>
+            <div class="card__video">
+              <iframe title="Robynhood video demonstration and tutorial" data-src="https://www.youtube.com/embed/SY0mn_hmMbc?ecver=1&amp" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="card__video-content"></iframe>
+            </div>
+            <!-- STACK -->
+            <button type="button" class="card__button btn btn--stack">Stack</button>
+            <div class="card__stack">Flask, Python, SQLite, MySQL, Jinja, Bootstrap 5, CSS, JavaScript, AWS EC2</div>
+            <a href="https://www.welbuild.tk" class="card__link btn btn--card" target="_blank" rel="noopener noreferrer">Launch</a>
+            <button class="card__popup btn btn--stack">Info</button>
+          </div>
+          <!-- POPUP/INFO -->
+          <div class="popup">
+            <div class="popup__content popup--learn-more">
+              <div class="popup__close">&times;</div>
+              <div class="popup--learn-more__about">
+                <h4 class="popup--learn-more__header">Main Features</h4>
+                <p class="popup--learn-more__text">
+                  <ul class="popup--learn-more__list">
+                    <li>Sign-up</li>
+                    <li>Log-in</li>
+                    <li>Change Password</li>
+                    <li>Stock price API</li>
+                    <li>Buy/Sell stock</li>
+                    <li>Deposit Cash</li>
+                    <li>Transaction history</li>
+                  </ul>
+                </p>
+
+              </div>
+       
+              <div class="popup--learn-more__source">
+                <h4 class="popup--learn-more__header">Source Code</h4>
+                <p class="popup--learn-more__text">Click the Github icon below to see the source code</p>
+                <a href="https://github.com/tonyv0126/FINANCE" class="popup--learn-more__link" aria-label="link to my GitHub account" target="_blank" rel="noopener noreferrer">
+                  <svg class="popup--learn-more__icon">
+                    <use xlink:href="img/sprite.svg#icon-github"></use>
+                  </svg>
+                </a>
+              </div>
+            </div> 
+          </div>
       <!-- PROJECT: Explore Cultures -->
       <div class="card">
         <h4 class="card__heading">Explore Cultures</h4>
@@ -284,7 +330,7 @@
         </div>
         <!-- STACK -->
         <button type="button" class="card__button btn btn--stack">Stack</button>
-        <div class="card__stack">D3, React.js, Typescript, Bootstrap 4, CSS, AWS Amplify</div>
+        <div class="card__stack">HTML, CSS, JAVASCRIPT, Bootstrap 5, AWS Amplify</div>
         <a href="https://main.d3o6xlhot2sf6r.amplifyapp.com/" class="card__link btn btn--card" target="_blank" rel="noopener noreferrer" style="font: bolder">Launch</a>
         <button class="card__popup btn btn--stack">Info</button>
       </div>
@@ -293,22 +339,23 @@
         <div class="popup__content popup--learn-more">
           <div class="popup__close">&times;</div>
           <div class="popup--learn-more__about">
-            <h4 class="popup--learn-more__header">About</h4>
-            <p class="popup--learn-more__text">TBW</p>
-          </div>
-          <div class="popup--learn-more__methodology">
-            <h4 class="popup--learn-more__header">Methodology</h4>
+            <h4 class="popup--learn-more__header">Main Features</h4>
             <p class="popup--learn-more__text">
               <ul class="popup--learn-more__list">
-                <li>TBW</li>
-                
+                <li>Slideshows</li>
+                <li>Healthbar</li>
+                <li>Sort Category</li>
               </ul>
+
+
+
             </p>
           </div>
+         
           <div class="popup--learn-more__source">
             <h4 class="popup--learn-more__header">Source Code</h4>
-            <p class="popup--learn-more__text">Click the Github icon below to see the source code and documentation</p>
-            <a href="https://github.com/tonyv0126" class="popup--learn-more__link" aria-label="link to my GitHub account" target="_blank" rel="noopener noreferrer">
+            <p class="popup--learn-more__text">Click the Github icon below to see the source code</p>
+            <a href="https://github.com/tonyv0126/CULTURE" class="popup--learn-more__link" aria-label="link to my GitHub account" target="_blank" rel="noopener noreferrer">
               <svg class="popup--learn-more__icon">
                 <use xlink:href="img/sprite.svg#icon-github"></use>
               </svg>
@@ -317,53 +364,7 @@
         </div> 
       </div>
 
-      <!-- PROJECT: Finance -->
-      <div class="card">
-        <h4 class="card__heading">WelBuild</h4>
-        <h5 class="card__sub-heading">Full-stack web application for managing an investment portfolio by buying and selling stocks based on their actual prices</h5>
-        <div class="card__video">
-          <iframe title="Robynhood video demonstration and tutorial" data-src="https://www.youtube.com/embed/SY0mn_hmMbc?ecver=1&amp" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="card__video-content"></iframe>
-        </div>
-        <!-- STACK -->
-        <button type="button" class="card__button btn btn--stack">Stack</button>
-        <div class="card__stack">Flask, Python, SQL Alchemy, MySQL, Jinja, Bootstrap 4, CSS, JavaScript, AWS EC2</div>
-        <a href="https://www.welbuild.tk" class="card__link btn btn--card" target="_blank" rel="noopener noreferrer">Launch</a>
-        <button class="card__popup btn btn--stack">Info</button>
-      </div>
-      <!-- POPUP/INFO -->
-      <div class="popup">
-        <div class="popup__content popup--learn-more">
-          <div class="popup__close">&times;</div>
-          <div class="popup--learn-more__about">
-            <h4 class="popup--learn-more__header">About</h4>
-            <p class="popup--learn-more__text">The main features are login, sign-up, stock price API, and portfolio, bought, sold, and history tables in a SQL database (create, read, and update).</p>
-          </div>
-          <div class="popup--learn-more__methodology">
-            <h4 class="popup--learn-more__header">Methodology</h4>
-            <p class="popup--learn-more__text">
-              <ul class="popup--learn-more__list">
-                <li>Database designed in SQL to leverage tables and relational queries</li>
-                <li>Rewrote the entire application to use Flask SQL Alchemy to learn SQL in python and about object-relational mappers</li>
-                <li>Used Flask as a server-side framework to gain exposure to Python programming and a framework other than express.js</li>
-                <li>Used jinja templating to gain exposure to frameworks other than embedded javascript templates (EJS)</li>
-                <li>Password hashing using Werkzeug, a flask plugin</li>
-                <li>Continuous integration and continuous deployment (CI/CD) with Travis CI to gain exposure to a CI/CD tool other than CircleCI</li>
-                <li>Developed minimum viable product (MVP) of application with SQLite locally to test it and deployed with MySQL on RDS instance for production</li>
-                <li>Site is hosted on Amazon Web Services (AWS) on an Elastic Beanstalk instance. Chose AWS to gain skills and knowledge about this infrastructure as a service (IaaS). Chose Elastic Beanstalk since it's most similar to Heroku and it would ease me into the complexity of AWS.</li>
-              </ul>
-            </p>
-          </div>
-          <div class="popup--learn-more__source">
-            <h4 class="popup--learn-more__header">Source Code</h4>
-            <p class="popup--learn-more__text">Click the Github icon below to see the source code and documentation</p>
-            <a href="https://github.com/tonyv0126" class="popup--learn-more__link" aria-label="link to my GitHub account" target="_blank" rel="noopener noreferrer">
-              <svg class="popup--learn-more__icon">
-                <use xlink:href="img/sprite.svg#icon-github"></use>
-              </svg>
-            </a>
-          </div>
-        </div> 
-      </div>
+ 
 
       <!-- PROJECT: Finance Keywords -->
       <div class="card">
@@ -383,22 +384,24 @@
         <div class="popup__content popup--learn-more">
           <div class="popup__close">&times;</div>
           <div class="popup--learn-more__about">
-            <h4 class="popup--learn-more__header">About</h4>
-            <p class="popup--learn-more__text">TBW</i>.</p>
-          </div>
-          <div class="popup--learn-more__methodology">
-            <h4 class="popup--learn-more__header">Methodology</h4>
+            <h4 class="popup--learn-more__header">Main Features</h4>
             <p class="popup--learn-more__text">
               <ul class="popup--learn-more__list">
-                <li>TBW</li>
-              
+                <li>Gathering headlines from newspaper websites</li>
+                <li>Determine most repeated and relevant words</li>
+                <li>Present data in the forms of wordcloud, barchart and pie chart</li>
+                <li>Add more URLs for data collection</li>
+
+
+
               </ul>
             </p>
           </div>
+         
           <div class="popup--learn-more__source">
             <h4 class="popup--learn-more__header">Source Code</h4>
-            <p class="popup--learn-more__text">Click the Github icon below to see the source code and documentation</p>
-            <a href="https://github.com/tonyv0126" class="popup--learn-more__link" aria-label="link to my GitHub account" target="_blank" rel="noopener noreferrer">
+            <p class="popup--learn-more__text">Click the Github icon below to see the source code </p>
+            <a href="https://github.com/tonyv0126/PROJECT-A" class="popup--learn-more__link" aria-label="link to my GitHub account" target="_blank" rel="noopener noreferrer">
               <svg class="popup--learn-more__icon">
                 <use xlink:href="img/sprite.svg#icon-github"></use>
               </svg>
@@ -426,7 +429,7 @@
     <h3 class="bio__header">Bio</h3>
     <img data-src="img/bio.jpg" src="img/profile-placeholder.jpg" alt="My photo" class="bio__img">
     <div class="bio__content">
-      <p class="bio__content__paragraph">I'm a software engineer because I'm passionate about solving problems and building solutions. I chose to focus on web development because it's a ubiquitous, accessible, and powerful platform. I specialize in full-stack web development. To see the full list of technologies I work with, please click this <a id="technologies-link" class="curriculum__link">link</a></p>
+      <p class="bio__content__paragraph">I'm a software engineer because I'm passionate about solving problems and building solutions. I chose to focus on web development because it's a ubiquitous, accessible, and powerful platform. I specialize in full-stack web development. To see the full list of technologies I work with, please click this <a href="#skills" class="curriculum__link">link</a></p>
       <ul id="technologies">
         <li>Front-End - React.js, Redux, Typescript, Javascript (ES6+), D3.js, Gatsby.js, Styled Components, Material UI, Sass, CSS3, HTML</li>
         <li>Back-End - Node.js, AWS Cloud Development Kit (CDK), Express.js, Python, Django, Flask, GraphQL, C</li>
@@ -441,51 +444,9 @@
         <li>Prototyping & Graphic Design - AdobeXD, Inkscape</li>
         <li>Software Design: UML</li>
       </ul>
-      <p class="bio__content__paragraph">My bachelor degree didn't include computer science. However, I've grown interest in this field after particiating in a project organized by DiDi, which was about optimizing traffic lights using trajectory data from the taxi vehicles. I've decided to deepen my knowledge in computer science and software engineer by enrolling in the Master degree at UTAS. I've also expanded my programming skills and practical knowledge from self-study and through personal projects. I'm always learning, so check out the courses I've completed, courses that are still in progress via the curriculum button below.</p>
+      <p class="bio__content__paragraph">My bachelor degree didn't include computer science. However, I've grown interest in this field after particiating in a project organized by DiDi, which was about optimizing traffic lights using trajectory data from the taxi vehicles. I've decided to deepen my knowledge in computer science and software engineer by enrolling in the Master degree at UTAS. I've also expanded my programming skills and practical knowledge from self-study and through personal projects. I'm always learning!!</p>
     </div>
-    <button type="button" class="btn btn--slideToggle">Curriculum</button>
-    <!-- CURRICULUM -->
-    <div class="curriculum">
-      <!-- LIST OF COURSES AND BOOKS -->
-      <ul class="curriculum__main">
-        <!-- COMPLETED -->
-        <span class="curriculum__main-completed curriculum__box">
-          <h4 class="curriculum__header">
-            <div class="curriculum__header-completed">
-              <svg class="curriculum__header__icon">
-                <use xlink:href="img/sprite.svg#icon-checkmark"></use>
-              </svg>
-              Completed
-            </div>
-          </h4>
-          <div class="curriculum__list">
-            <li class="curriculum__item"><a href="https://www.edx.org/" class="curriculum__link" target="_blank" rel="noopener noreferrer">Advanced CSS and Sass</a></li>
-            <li class="curriculum__item"><a href="https://www.edx.org/" class="curriculum__link" target="_blank" rel="noopener noreferrer"> The Git & Github </a></li>
-            <li class="curriculum__item"><a href="https://www.edx.org/course/cs50s-introduction-to-computer-science" class="curriculum__link" target="_blank" rel="noopener noreferrer">eDX Harvard's CS50 Introduction to Computer Science</a></li>
-            <li class="curriculum__item"><a href="https://www.oreilly.com/library/view/the-pragmatic-programmer/020161622X/" class="curriculum__link" target="_blank" rel="noopener noreferrer"><cite>The Pragmatic Programmer: From Journeyman to Master</cite> by Hunt and Thomas</a></li>
-            <li class="curriculum__item"><a href="https://aws.amazon.com/education/awseducate/" class="curriculum__link" target="_blank" rel="noopener noreferrer"> Ultimate AWS Certified Developer Associate</a></li>
-            <li class="curriculum__item"><a href="https://explore.skillbuilder.aws/learn/public/learning_plan/view/92/serverless-learning-plan" class="curriculum__link" target="_blank" rel="noopener noreferrer">AWS Skill Builder Serverless Learning Plan</a></li>
-          </div>
-        </span>
-        <!-- IN PROGRESS -->
-        <span class="curriculum__main-progress curriculum__box">
-          <h4 class="curriculum__header">
-            <div class="curriculum__header-progress">
-              <svg class="curriculum__header__icon">
-                <use xlink:href="img/sprite.svg#icon-spinner6"></use>
-              </svg>
-              In Progress
-            </div>
-          </h4>
-          <div class="curriculum__list">
-            <li class="curriculum__item"><a href="https://www.coursera.org/specializations/algorithms" class="curriculum__link" target="_blank" rel="noopener noreferrer">Coursera Standford's Algorithms Specialization</a></li>
-            <li class="curriculum__item"><a href="https://www.edx.org/course/cs50s-web-programming-with-python-and-javascript" class="curriculum__link" target="_blank" rel="noopener noreferrer">eDX Harvard's CS50W Web Programming with Python and JavaScript</a></li>
-          </div>
-        </span>
-       
-      </ul>
-     
-    </div>
+
     </section>
 
 
